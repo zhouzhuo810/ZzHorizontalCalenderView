@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <me.zhouzhuo.zzhorizontalcalenderview.ZzHorizontalCalenderView
+        android:id="@+id/zz_horizontal_calender_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:zhc_day_selected_text_color="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="100px"
+        android:layout_height="wrap_content" />
+</LinearLayout>

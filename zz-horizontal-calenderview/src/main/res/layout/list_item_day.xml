@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item_root_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/month_year_bg_selector"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="110px"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/item_week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8px"
+            android:gravity="center_horizontal"
+            android:textSize="20px"
+            android:textColor="#9e9e9e" />
+
+        <TextView
+            android:id="@+id/item_day"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginTop="8px"
+            android:textSize="24px"
+            android:gravity="center"
+            android:background="@drawable/day_selected_shape_normal"
+            />
+
+        <View
+            android:id="@+id/item_point"
+            android:layout_width="10px"
+            android:layout_height="10px"
+            android:layout_marginBottom="10px"
+            android:layout_marginTop="10px"
+            android:background="@drawable/point_selected_shape"
+            android:visibility="invisible" />
+    </LinearLayout>
+</LinearLayout>

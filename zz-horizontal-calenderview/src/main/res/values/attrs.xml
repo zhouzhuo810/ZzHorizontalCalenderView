@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ZzHorizontalCalenderView">
+        <attr name="zhc_show_pick_dialog" format="boolean" />
+        <attr name="zhc_unit_color" format="color|reference" />
+        <attr name="zhc_selection_color" format="color|reference" />
+        <attr name="zhc_press_shape_selector" format="reference" />
+        <attr name="zhc_year_text_color" format="color|reference" />
+        <attr name="zhc_month_text_color" format="color|reference" />
+        <attr name="zhc_week_text_color" format="color|reference" />
+        <attr name="zhc_day_selected_text_color" format="color|reference" />
+        <attr name="zhc_day_unselected_text_color" format="color|reference" />
+        <attr name="zhc_today_point_color" format="color|reference" />
+    </declare-styleable>
+</resources>
