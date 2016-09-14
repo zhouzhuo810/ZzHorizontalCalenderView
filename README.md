@@ -34,7 +34,7 @@ Maven:
 
 效果图如下：
 
-![demo](http://img.blog.csdn.net/20160914231437395)
+![demo](https://github.com/zhouzhuo810/ZzHorizontalCalenderView/blob/master/zzhorizontalcalenderview.gif)
 
 
 **属性**：
