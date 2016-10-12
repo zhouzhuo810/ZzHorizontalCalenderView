@@ -2,6 +2,7 @@
 <resources>
     <declare-styleable name="ZzHorizontalCalenderView">
         <attr name="zhc_show_pick_dialog" format="boolean" />
+        <attr name="zhc_min_year" format="integer" />
         <attr name="zhc_unit_color" format="color|reference" />
         <attr name="zhc_selection_color" format="color|reference" />
         <attr name="zhc_press_shape_selector" format="reference" />

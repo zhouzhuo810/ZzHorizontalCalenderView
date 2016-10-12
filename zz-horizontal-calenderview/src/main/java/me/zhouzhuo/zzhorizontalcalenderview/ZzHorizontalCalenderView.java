@@ -41,6 +41,8 @@ public class ZzHorizontalCalenderView extends FrameLayout {
 
     private DayAdapter adapter;
 
+    private int minYear;
+
     private int curYear;
 
     private int curMonth;
@@ -117,6 +119,7 @@ public class ZzHorizontalCalenderView extends FrameLayout {
     private void initAttrs(Context context, AttributeSet attrs) {
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ZzHorizontalCalenderView);
         showPickDialog = a.getBoolean(R.styleable.ZzHorizontalCalenderView_zhc_show_pick_dialog, true);
+        minYear = a.getInteger(R.styleable.ZzHorizontalCalenderView_zhc_min_year, 2012);
         unitColor = a.getColor(R.styleable.ZzHorizontalCalenderView_zhc_unit_color, 0xff3498DB);
         yearTextColor = a.getColor(R.styleable.ZzHorizontalCalenderView_zhc_year_text_color, 0xff000000);
         monthTextColor = a.getColor(R.styleable.ZzHorizontalCalenderView_zhc_month_text_color, 0xff000000);
@@ -287,7 +290,7 @@ public class ZzHorizontalCalenderView extends FrameLayout {
                     LinearLayout ll = new LinearLayout(getContext());
 
                     final NumberPicker yearPicker = new NumberPicker(getContext());
-                    yearPicker.setMinValue(2012);
+                    yearPicker.setMinValue(minYear);
                     yearPicker.setMaxValue(DateUtil.getCurrentYear());
                     yearPicker.setValue(selectedYear);
 
@@ -327,7 +330,7 @@ public class ZzHorizontalCalenderView extends FrameLayout {
                     LinearLayout ll = new LinearLayout(getContext());
 
                     final NumberPicker yearPicker = new NumberPicker(getContext());
-                    yearPicker.setMinValue(2012);
+                    yearPicker.setMinValue(minYear);
                     yearPicker.setMaxValue(DateUtil.getCurrentYear());
                     yearPicker.setValue(selectedYear);
                     final NumberPicker monthPicker = new NumberPicker(getContext());
