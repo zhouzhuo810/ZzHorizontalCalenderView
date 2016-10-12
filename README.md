@@ -7,7 +7,7 @@ Github地址：[https://github.com/zhouzhuo810/ZzHorizontalCalenderView](https:/
 Gradle:
 
 ```
-compile 'me.zhouzhuo.zzhorizontalcalenderview:zz-horizontal-calenderview:1.0.0'
+compile 'me.zhouzhuo.zzhorizontalcalenderview:zz-horizontal-calenderview:1.0.1'
 ```
 
 Maven:
@@ -16,7 +16,7 @@ Maven:
 <dependency>
   <groupId>me.zhouzhuo.zzhorizontalcalenderview</groupId>
   <artifactId>zz-horizontal-calenderview</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <type>pom</type>
 </dependency>
 ```
@@ -31,6 +31,7 @@ Maven:
 7.支持今天小圆点标注；
 8.支持今天小圆点颜色配置；
 9.所有配置均支持xml属性配置或java代码动态设置；
+10.支持选择年份时最小年份配置；
 
 效果图如下：
 
@@ -43,6 +44,7 @@ Maven:
 ```xml
     <declare-styleable name="ZzHorizontalCalenderView">
         <attr name="zhc_show_pick_dialog" format="boolean" />
+        <attr name="zhc_min_year" format="integer" />
         <attr name="zhc_unit_color" format="color|reference" />
         <attr name="zhc_selection_color" format="color|reference" />
         <attr name="zhc_press_shape_selector" format="reference" />
@@ -61,6 +63,7 @@ Maven:
 | 属性名称| 属性作用| 属性类型 |
 | ----| ---- |---- |
 | zhc_show_pick_dialog| 点击年或月是否弹出日期选择对话框 | boolean |
+| zhc_min_year| 最小年份 | integer |
 | zhc_unit_color| 年月单位的颜色 | color |
 | zhc_selection_color| 日的选中颜色 |color|
 | zhc_press_shape_selector| 年或月或日点击效果选择器 | selector |
